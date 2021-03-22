@@ -72,7 +72,7 @@ jobs:
 
       - name: Setting Python env path
         run: |
-         echo "PYTHONPATH=/home/runner/work/oneview-ansible-collection:$PYTHONPATH" >> $GITHUB_ENV
+         echo "PYTHONPATH=/home/runner/work/test-codecov:$PYTHONPATH" >> $GITHUB_ENV
 
       - name: Run unit tests
         run: pytest
