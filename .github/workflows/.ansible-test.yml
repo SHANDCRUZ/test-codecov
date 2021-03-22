@@ -79,7 +79,7 @@ jobs:
         run: pytest
 
       - name: Run the coverage test
-        run: pytest --cov-report xml --cov=$PWD tests/
+        run: pytest --cov-report xml --cov=$PWD/plugins/modules tests/
 
       - name: "Upload coverage to Codecov"
         uses: codecov/codecov-action@v1
