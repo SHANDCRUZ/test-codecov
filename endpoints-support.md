@@ -4,7 +4,7 @@
 | ------------------ | --------------------------------------------- |
 |  :white_check_mark: | Endpoint implemented in the Ansible collection and tested for this API version :tada: |
 |  :heavy_multiplication_x:  | Endpoint considered as 'out-of-scope' for the Ansible collection               |
-|  :heavy_minus_sign: | Endpoint not available for this API Version |
+|  :heavy_minus_sign: | Endpoint not available for this API Version  |
 
 <br />
 

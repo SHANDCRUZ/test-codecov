@@ -168,7 +168,7 @@ This release extends the planned support of the collections to OneView REST API 
 ## v1.1.0
 This release extends the planned support of the collections to OneView REST API version 2200 (OneView v5.5)
 
-### Modules supported in this release
+### Modules  supported in this release
 - oneview_certificates_server
 - oneview_certificates_server_facts
 - oneview_connection_template
