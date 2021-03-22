@@ -71,4 +71,4 @@ with constructive feedback. If your pull request is not accepted at
 first, please try again after addressing the feedback you received.
 
 To make a pull request you will need a GitHub account. For help, see
-GitHub's documentation on forking and pull requests .
+GitHub's documentation on forking and pull requests.

@@ -1,5 +1,5 @@
 FROM python:3.7-slim-buster
-LABEL maintainer "Chebrolu Harika <bala-sai-harika.chebrolu@hpe.com> "
+LABEL maintainer "Chebrolu Harika <bala-sai-harika.chebrolu@hpe.com>"
 WORKDIR /root
 
 # Some optional but recommended packages
