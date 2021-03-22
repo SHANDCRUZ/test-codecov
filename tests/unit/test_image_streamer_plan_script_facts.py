@@ -69,19 +69,6 @@ class TestPlanScriptFactsModule(ImageStreamerBaseFactsTest):
             ansible_facts=dict(plan_scripts=[self.PLAN_SCRIPT])
         )
 
-    def test_get_useby_and_read_only(self):
-        self.resource.get_by.return_value = [self.PLAN_SCRIPT]
-        self.resource.get_usedby_and_readonly.return_value = self.USE_BY
-
-        self.mock_ansible_module.params = PARAMS_GET_USEBY
-
-        PlanScriptFactsModule().run()
-
-        self.mock_ansible_module.exit_json.assert_called_once_with(
-            changed=False,
-            ansible_facts=dict(plan_scripts=[self.PLAN_SCRIPT], use_by=self.USE_BY)
-        )
-
 
 if __name__ == '__main__':
     pytest.main([__file__])

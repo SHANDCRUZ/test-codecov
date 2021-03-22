@@ -112,30 +112,6 @@ class TestPlanScriptModule(ImageStreamerBaseTest):
             ansible_facts=dict(plan_script=PARAMS_UPDATE['data'])
         )
 
-    def test_delete_plan_script(self):
-        self.resource.get_by.return_value = [self.PLAN_SCRIPT]
-
-        self.mock_ansible_module.params = PARAMS_DELETE
-
-        PlanScriptModule().run()
-
-        self.mock_ansible_module.exit_json.assert_called_once_with(
-            changed=True,
-            msg=PlanScriptModule.MSG_DELETED
-        )
-
-    def test_should_do_nothing_when_deleting_a_non_existent_plan_script(self):
-        self.resource.get_by.return_value = []
-
-        self.mock_ansible_module.params = PARAMS_DELETE
-
-        PlanScriptModule().run()
-
-        self.mock_ansible_module.exit_json.assert_called_once_with(
-            changed=False,
-            msg=PlanScriptModule.MSG_ALREADY_ABSENT
-        )
-
     def test_should_fail_when_mandatory_attributes_are_missing(self):
         self.resource.get_by.return_value = []
 
