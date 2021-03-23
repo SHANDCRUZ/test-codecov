@@ -6,9 +6,9 @@ coverage:
   status:
     project:
       default:
-        # basic
+        #basic
         target: auto
-        threshold: 0%
+        threshold: 1%
         base: auto 
         branches: 
           - master
