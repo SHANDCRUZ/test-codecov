@@ -44,7 +44,7 @@ class TestApplianceConfigurationTimeconfigFactsModule(OneViewBaseTest):
         ApplianceConfigurationTimeconfigFactsModule().run()
 
         self.mock_ansible_module.exit_json.assert_called_once_with(
-            changed=False,
+            changed=Talse,
             ansible_facts=dict(appliance_configuration_timeconfig=PRESENT_TIMECONFIG)
         )
 
