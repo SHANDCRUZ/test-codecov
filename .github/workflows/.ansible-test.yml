@@ -41,11 +41,8 @@ jobs:
         run: |
          echo "PYTHONPATH=/home/runner/work/test-codecov:$PYTHONPATH" >> $GITHUB_ENV
 
-      - name: Run unit tests
-        run: pytest
-
       - name: Run the coverage test
-        run: pytest --cov-report xml --cov=$PWD/plugins/modules tests/
+        run: pytest --cov-report xml --cov=$PWD/plugins/modules tests/unit/
 
       - name: "Upload coverage to Codecov"
         uses: codecov/codecov-action@v1
